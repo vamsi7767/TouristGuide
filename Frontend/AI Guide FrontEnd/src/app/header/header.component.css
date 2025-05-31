@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    background-color:  #CCF381;
+    color: #4831D4;
+}
+.head-custom{
+    height: 20px;
+}
+.head-custom1{
+    height: 40px;
+    position: relative;
+    bottom: 0.4rem;
+}
+.nav-item1{
+   position: absolute;
+   left: 1150px;
+   color: white;
+   border-radius: 4px;
+    background-color: red;
+    padding-block: 3px;
+    top: -7px;
+    font-size: large;
+    left: 1165px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav-item{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}

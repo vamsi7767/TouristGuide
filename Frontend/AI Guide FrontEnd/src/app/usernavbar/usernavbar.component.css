@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    background-color:  #CCF381;
+    color: #4831D4;
+}
+.head-custom{
+    height: 20px;
+}
+.head-custom1{
+    height: 40px;
+    position: relative;
+    bottom: 0.4rem;
+}
+.nav-item1{
+   position: absolute;
+   left: 1100px;
+   color: white;
+}
+.nav-item{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+button{
+   position: absolute;
+   color: white;
+   border-radius: 3px;
+   background-color: red;
+   padding-block: 1px;
+   top: -6px;
+   font-size: large;
+   left: 1165px;
+
+}
+
+/* .outer{
+    background-color: rgb(218, 226, 229);
+     height: 40rem;
+     position: relative;
+     bottom: 0.4rem;
+ } */

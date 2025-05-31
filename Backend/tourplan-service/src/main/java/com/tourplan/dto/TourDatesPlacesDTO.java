@@ -1,0 +1,48 @@
+package com.tourplan.dto;
+
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@RequiredArgsConstructor
+public class TourDatesPlacesDTO {
+
+	private Integer planId;
+	private String tourDate;
+	private PlaceDTO placeDto;
+	public TourDatesPlacesDTO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public TourDatesPlacesDTO(Integer planId, String tourDate, PlaceDTO placeDto) {
+	 
+		this.planId = planId;
+		this.tourDate = tourDate;
+		this.placeDto = placeDto;
+	}
+	public Integer getPlanId() {
+		return planId;
+	}
+	public void setPlanId(Integer planId) {
+		this.planId = planId;
+	}
+	public String getTourDate() {
+		return tourDate;
+	}
+	public void setTourDate(String tourDate) {
+		this.tourDate = tourDate;
+	}
+	public PlaceDTO getPlaceDto() {
+		return placeDto;
+	}
+	public void setPlaceDto(PlaceDTO placeDto) {
+		this.placeDto = placeDto;
+	}
+	@Override
+	public String toString() {
+		return "TourDatesPlacesDTO [planId=" + planId + ", tourDate=" + tourDate + ", placeDto=" + placeDto + "]";
+	}
+	
+	
+
+}

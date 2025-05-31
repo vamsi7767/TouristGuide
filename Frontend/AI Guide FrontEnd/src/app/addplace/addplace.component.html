@@ -1,0 +1,79 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="card p-5 mt-2">
+  <div class="container">
+    <h4>Add Place</h4>
+    <form #placeForm="ngForm" (ngSubmit)="addPlace()" novalidate>
+      <div class="form-group">
+        <label class="label" for="placeName">PlaceName:</label>
+        <input type="text" class="form-control" placeholder="Enter placeName" name="placeName"
+          [(ngModel)]="place.placeName" required>
+        <div
+          *ngIf="placeForm.controls['placeName']?.invalid && (placeForm.controls['placeName']?.dirty || placeForm.controls['placeName']?.touched)"
+          class="text-warning">
+          PlaceName is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="label" for="address">Address:</label>
+        <input type="text" class="form-control" placeholder="Enter address" name="address" [(ngModel)]="place.address"
+          required>
+        <div
+          *ngIf="placeForm.controls['address']?.invalid && (placeForm.controls['address']?.dirty || placeForm.controls['address']?.touched)"
+          class="text-warning">
+          Address is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="label" for="area">Area:</label>
+        <input type="text" class="form-control" placeholder="Enter area" name="area" [(ngModel)]="place.area" required>
+        <div
+          *ngIf="placeForm.controls['area']?.invalid && (placeForm.controls['area']?.dirty || placeForm.controls['area']?.touched)"
+          class="text-warning">
+          Area is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="label" for="distance">Distance:</label>
+        <input type="text" class="form-control" placeholder="Enter distance" name="distance"
+          [(ngModel)]="place.distance" required>
+        <div
+          *ngIf="placeForm.controls['distance']?.invalid && (placeForm.controls['distance']?.dirty || placeForm.controls['distance']?.touched)"
+          class="text-warning">
+          Distance is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="label" for="description">Description:</label>
+        <input type="text" class="form-control" placeholder="Enter description" name="description"
+          [(ngModel)]="place.description" required>
+        <div
+          *ngIf="placeForm.controls['description']?.invalid && (placeForm.controls['description']?.dirty || placeForm.controls['description']?.touched)"
+          class="text-warning">
+          Description is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="label" for="tags" class="choose-tags-label">Choose Tags:</label>
+        <select class="form-control choose-tags-dropdown" name="tags" [(ngModel)]="place.tags" required>
+          <option value="" disabled>Select a tag</option>
+          <option value="Beach">Beach</option>
+          <option value="Hill Station">Hill Station</option>
+          <option value="Desert">Desert</option>
+          <option value="Water Falls">Water Falls</option>
+          <option value="Mountain">Mountain</option>
+          <option value="National Park">National Park</option>
+          <option value="Historical Site">Historical Site</option>
+          <option value="Holy Place">Holy Place</option>
+        </select>
+        <div
+          *ngIf="placeForm.controls['tags']?.invalid && (placeForm.controls['tags']?.dirty || placeForm.controls['tags']?.touched)"
+          class="text-warning">
+          Please choose a tag.
+        </div>
+
+      </div>
+      <button type="submit" class="btn btn-info" [disabled]="placeForm.invalid">Add</button>
+      <button type="button" class="btn btn-danger" (click)="clearForm(placeForm)">Clear Form</button>
+    </form>
+  </div>
+</div>

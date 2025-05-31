@@ -1,0 +1,41 @@
+
+.custom-button {
+    background-color: #4CAF50;
+    color: white; 
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .custom-button:hover {
+    background-color: #45a049;
+  }
+
+  .custom-button {
+  background-color: #007bff; 
+  color: #fff; 
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #117eec;
+  padding: 8px;
+  text-align: left;
+}
+
+.thead-dark {
+  background-color: #4c7c69; 
+  color: rgb(184, 121, 121); 
+}
+
+.table tbody tr:hover {
+  background-color: #08ea1f; 
+}
+
+.table tbody td:last-child {
+  text-align: center;
+}

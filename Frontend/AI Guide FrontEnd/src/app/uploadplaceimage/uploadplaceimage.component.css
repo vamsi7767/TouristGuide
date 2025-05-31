@@ -1,0 +1,34 @@
+/* Add this CSS code to your component's style file */
+
+.upload-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .upload-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .upload {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    border-radius: 8px;
+    background-color: #d51595;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1565c0;
+  }
+  

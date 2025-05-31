@@ -1,0 +1,70 @@
+package com.feedbackservice.dto;
+
+import java.sql.Timestamp;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class FeedbackDto {
+
+	private Integer placeId;
+	private String placeName;
+	private String feedbackText;
+	private Timestamp dateTime;
+
+	public FeedbackDto() {
+	 
+	}
+
+	public FeedbackDto(Integer placeId, String placeName, String feedbackText, Timestamp dateTime) {
+		super();
+		this.placeId = placeId;
+		this.placeName = placeName;
+		this.feedbackText = feedbackText;
+		this.dateTime = dateTime;
+	}
+
+	public Integer getPlaceId() {
+		return placeId;
+	}
+
+	public void setPlaceId(Integer placeId) {
+		this.placeId = placeId;
+	}
+
+	public String getPlaceName() {
+		return placeName;
+	}
+
+	public void setPlaceName(String placeName) {
+		this.placeName = placeName;
+	}
+
+	public String getFeedbackText() {
+		return feedbackText;
+	}
+
+	public void setFeedbackText(String feedbackText) {
+		this.feedbackText = feedbackText;
+	}
+
+	public Timestamp getDateTime() {
+		return dateTime;
+	}
+
+	public void setDateTime(Timestamp dateTime) {
+		this.dateTime = dateTime;
+	}
+
+	@Override
+	public String toString() {
+		return "FeedbackDto [placeId=" + placeId + ", placeName=" + placeName + ", feedbackText=" + feedbackText
+				+ ", dateTime=" + dateTime + "]";
+	}
+	
+	
+	
+
+}

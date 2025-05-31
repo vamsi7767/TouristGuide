@@ -1,0 +1,19 @@
+<app-usernavbar></app-usernavbar>
+<div class="outer">
+    <div class="feed">
+        <h4>Feed Back</h4>
+        <form #placeForm="ngForm" (ngSubmit)="addFeedback()" class="form-feed" novalidate>
+            <div class="form-group">
+                <label for="feedBack">FeedBack:</label>
+                <input type="text" class="form-control" placeholder="Enter feedBack" name="feedBack"
+                    [(ngModel)]="feedback.feedbackText" required>
+                <div *ngIf="placeForm.controls['feedBack']?.invalid && (placeForm.controls['feedBack']?.dirty || placeForm.controls['feedBack']?.touched)"
+                    class="text-warning">
+                    Feedback is required.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-info" [disabled]="placeForm.invalid">Submit</button>
+            <button type="button" class="btn btn-danger" routerLink="/usertrips">Cancel</button>
+        </form>
+    </div>
+</div>

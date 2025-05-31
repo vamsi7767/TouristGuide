@@ -1,0 +1,33 @@
+<app-person></app-person>
+<div class="card p-5 mt-2">
+  <div class="container">
+    <h4>Admin Login</h4>
+    <form #loginform="ngForm" (ngSubmit)="loginAdmin()" novalidate>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" placeholder="Enter email" name="email" [(ngModel)]="admin.email"
+          required email>
+        <div *ngIf="loginform.controls['email']?.invalid && (loginform.controls['email']?.dirty || loginform.controls['email']?.touched)"
+          class="text-warning">
+          Please enter a valid email.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" name="password"
+          [(ngModel)]="admin.password" required>
+        <div *ngIf="loginform.controls['password']?.invalid && (loginform.controls['password']?.dirty || loginform.controls['password']?.touched)"
+          class="text-warning">
+          Password is required.
+        </div>
+      </div>
+
+      <div *ngIf="loginError" class="text-warning">
+        Incorrect login credentials. Please try again.
+      </div>
+
+      <button type="submit" class="btn btn-info" [disabled]="loginform.invalid">Login</button>
+      <button type="button" class="btn btn-danger" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+</div>

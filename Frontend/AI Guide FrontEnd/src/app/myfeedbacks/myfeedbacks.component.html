@@ -1,0 +1,27 @@
+<app-usernavbar></app-usernavbar>
+<div class="container">
+    <center>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+
+                    <th>Place Name</th>
+                    <th>FeedBack</th>
+                    <th>Date Time</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let feedback of dataSource">
+
+                    <td>{{ feedback.placeName }}</td>
+                    <td>{{ feedback.feedbackText }}</td>
+                    <td class="tourdate">{{ feedback.dateTime }}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>

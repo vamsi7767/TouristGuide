@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top header">
+    <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="/" style="flex-grow: 1; text-align: center;">
+            
+            <span class="animated-text">AI Tourist Guide</span>
+        </a>
+    </div>
+</nav>
+<div class="container" style="background-color: gray; padding: 20px; margin: 80px; border-radius: 10px;">
+    <h1 class="text-center mb-5">Contact Us</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: <a href="mailto:{{ contactInfo.email }}">{{ contactInfo.email }}</a></li>
+                <li>Phone: {{ contactInfo.phone }}</li>
+            </ul>
+        </div>
+    
+        <div class="col-6">
+            <h2>Visit Us</h2>
+            <h6>Head Office</h6>
+            <address>
+                {{ address.companyName }}<br />
+                {{ address.street }}<br />
+                {{ address.city }}, {{ address.state }}, {{ address.zip }}<br />
+                {{ address.country }}
+            </address>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2>Our Service Areas</h2>
+            <ul>
+                <li *ngFor="let city of cities">{{ city }}</li>
+            </ul>
+        </div>
+    </div>
+</div>

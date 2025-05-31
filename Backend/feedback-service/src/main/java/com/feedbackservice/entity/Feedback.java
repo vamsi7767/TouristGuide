@@ -1,0 +1,98 @@
+package com.feedbackservice.entity;
+
+import java.sql.Timestamp;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@Entity
+public class Feedback {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer feedbackId;
+
+    @NotBlank(message = "Feedback text cannot be blank")
+    @Size(max = 200, message = "Feedback text must be at most 200 characters")
+    private String feedbackText;
+    
+    private Timestamp dateTime;
+    
+//    @Column (name = "user_Id")
+    private Integer userId;
+    
+    private Integer placeId;
+
+	public Feedback() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Feedback(Integer feedbackId,
+			@NotBlank(message = "Feedback text cannot be blank") @Size(max = 200, message = "Feedback text must be at most 200 characters") String feedbackText,
+			Timestamp dateTime, Integer userId, Integer placeId) {
+	 
+		this.feedbackId = feedbackId;
+		this.feedbackText = feedbackText;
+		this.dateTime = dateTime;
+		this.userId = userId;
+		this.placeId = placeId;
+	}
+
+	public Integer getFeedbackId() {
+		return feedbackId;
+	}
+
+	public void setFeedbackId(Integer feedbackId) {
+		this.feedbackId = feedbackId;
+	}
+
+	public String getFeedbackText() {
+		return feedbackText;
+	}
+
+	public void setFeedbackText(String feedbackText) {
+		this.feedbackText = feedbackText;
+	}
+
+	public Timestamp getDateTime() {
+		return dateTime;
+	}
+
+	public void setDateTime(Timestamp dateTime) {
+		this.dateTime = dateTime;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+
+	public Integer getPlaceId() {
+		return placeId;
+	}
+
+	public void setPlaceId(Integer placeId) {
+		this.placeId = placeId;
+	}
+
+	@Override
+	public String toString() {
+		return "Feedback [feedbackId=" + feedbackId + ", feedbackText=" + feedbackText + ", dateTime=" + dateTime
+				+ ", userId=" + userId + ", placeId=" + placeId + "]";
+	}
+    
+    
+    
+}

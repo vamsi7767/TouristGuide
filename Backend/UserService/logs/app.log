@@ -1,0 +1,8 @@
+2025-05-31 13:43:37,466 INFO c.c.s.UserService [main] Fetching all users
+2025-05-31 13:43:37,607 INFO c.c.s.UserService [main] Updating user with ID: 1
+2025-05-31 13:43:37,633 INFO c.c.s.UserService [main] Finding user by ID: 1
+2025-05-31 13:56:07,593 INFO c.c.s.UserService [http-nio-8099-exec-1] Fetching all users
+2025-05-31 13:56:49,082 INFO c.c.s.UserService [http-nio-8099-exec-5] Fetching all users
+2025-05-31 13:57:44,219 INFO c.c.s.UserService [http-nio-8099-exec-7] Finding user by ID: 1
+2025-05-31 14:09:37,348 INFO c.c.s.UserService [http-nio-8099-exec-9] Fetching all users
+2025-05-31 14:09:47,826 INFO c.c.s.UserService [http-nio-8099-exec-1] Finding user by ID: 1

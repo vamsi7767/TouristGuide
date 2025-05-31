@@ -1,0 +1,35 @@
+2024-01-18 18:51:15,713 INFO c.c.s.UserService [http-nio-8099-exec-5] Finding user by ID: 2
+2024-01-18 18:52:06,672 INFO c.c.s.UserService [http-nio-8099-exec-6] Finding user by ID: 2
+2024-01-18 18:52:17,565 INFO c.c.s.UserService [http-nio-8099-exec-9] Finding user by ID: 2
+2024-01-18 19:04:36,650 INFO c.c.s.UserService [http-nio-8099-exec-1] Finding user by ID: 2
+2024-01-18 19:05:02,721 INFO c.c.s.UserService [http-nio-8099-exec-2] Finding user by ID: 2
+2024-01-18 19:07:30,465 INFO c.c.s.UserService [http-nio-8099-exec-4] Finding user by ID: 2
+2024-01-18 19:07:36,384 INFO c.c.s.UserService [http-nio-8099-exec-5] Finding user by ID: 2
+2024-01-18 19:07:36,497 ERROR c.c.e.GlobalExceptions [http-nio-8099-exec-6] Exception occurred: No static resource favicon.ico.
+2024-01-18 19:11:48,186 INFO c.c.s.UserService [http-nio-8099-exec-8] Finding user by ID: 2
+2024-01-18 19:12:02,428 INFO c.c.s.UserService [http-nio-8099-exec-9] Fetching user for client with ID: 2
+2024-01-18 19:16:09,509 INFO c.c.s.UserService [http-nio-8099-exec-2] Finding user by ID: 2
+2024-01-18 19:16:13,491 INFO c.c.s.UserService [http-nio-8099-exec-3] Finding user by ID: 2
+2024-01-18 19:17:14,063 INFO c.c.s.UserService [http-nio-8099-exec-1] Finding user by ID: 2
+2024-01-18 19:17:23,701 INFO c.c.s.UserService [http-nio-8099-exec-6] Finding user by ID: 2
+2024-01-18 19:17:35,332 INFO c.c.s.UserService [http-nio-8099-exec-7] Finding user by ID: 2
+2024-01-18 19:18:00,476 INFO c.c.s.UserService [http-nio-8099-exec-8] Finding user by ID: 2
+2024-01-18 19:18:02,048 INFO c.c.s.UserService [http-nio-8099-exec-9] Finding user by ID: 2
+2024-01-18 19:18:02,518 INFO c.c.s.UserService [http-nio-8099-exec-10] Finding user by ID: 2
+2024-01-18 19:18:02,781 INFO c.c.s.UserService [http-nio-8099-exec-1] Finding user by ID: 2
+2024-01-18 19:18:03,058 INFO c.c.s.UserService [http-nio-8099-exec-2] Finding user by ID: 2
+2024-01-18 19:18:03,289 INFO c.c.s.UserService [http-nio-8099-exec-3] Finding user by ID: 2
+2024-01-18 19:18:03,532 INFO c.c.s.UserService [http-nio-8099-exec-4] Finding user by ID: 2
+2024-01-18 19:18:09,626 INFO c.c.s.UserService [http-nio-8099-exec-5] Finding user by ID: 2
+2024-01-18 19:18:30,076 INFO c.c.s.UserService [http-nio-8099-exec-8] Finding user by ID: 2
+2024-01-18 19:18:41,412 INFO c.c.s.UserService [http-nio-8099-exec-3] Finding user by ID: 1
+2024-01-18 19:22:20,230 INFO c.c.s.UserService [http-nio-8099-exec-7] Finding user by ID: 1
+2024-01-18 19:22:37,088 INFO c.c.s.UserService [http-nio-8099-exec-8] Finding user by name: Raju
+2024-01-18 19:22:47,800 INFO c.c.s.UserService [http-nio-8099-exec-9] Fetching all users
+2024-01-18 19:38:38,568 INFO c.c.s.UserService [http-nio-8099-exec-6] Finding user by ID: 2
+2024-01-18 19:49:17,481 INFO c.c.s.UserService [http-nio-8099-exec-1] Fetching all users
+2024-01-18 19:50:26,041 INFO c.c.s.UserService [http-nio-8099-exec-3] Finding user by ID: 2
+2024-01-18 19:51:05,718 INFO c.c.s.UserService [http-nio-8099-exec-4] Fetching user for client with ID: 2
+2024-01-18 19:55:14,571 INFO c.c.s.UserService [http-nio-8099-exec-7] Fetching user for client with ID: 2
+2024-01-18 20:06:34,998 INFO c.c.s.UserService [http-nio-8099-exec-9] Fetching all users
+2024-01-18 20:06:43,654 INFO c.c.s.UserService [http-nio-8099-exec-10] Fetching all users

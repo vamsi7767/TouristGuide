@@ -1,0 +1,123 @@
+package com.capgemini.entity;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
+@Table(name = "app_user")
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @Column(name = "full_name", nullable = false)
+    @Size(max = 100)
+    private String fullName;
+
+    @Column(name = "mobile_number", nullable = false)
+    @Size(max = 100)
+    @Pattern(regexp = "\\d{10}", message = "Mobile number must be 10 digits")
+    private String mobileNumber;
+
+    @Column(name = "address", nullable = false)
+    @Size(max = 100)
+    private String address;
+
+    @Column(nullable = false)
+    @Size(max = 100)
+    @Pattern(regexp = "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b",
+            message = "Invalid email format")
+    private String email;
+
+    @Column(nullable = false)
+    @Size(max = 100)
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}$",
+            message = "Password must contain at least one digit, one lowercase and uppercase letter, and be at least 8 characters long")
+    private String password;
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public User(Integer id, @Size(max = 100) String fullName,
+			@Size(max = 100) @Pattern(regexp = "\\d{10}", message = "Mobile number must be 10 digits") String mobileNumber,
+			@Size(max = 100) String address,
+			@Size(max = 100) @Pattern(regexp = "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b", message = "Invalid email format") String email,
+			@Size(max = 100) @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}$", message = "Password must contain at least one digit, one lowercase and uppercase letter, and be at least 8 characters long") String password) {
+		 
+		this.id = id;
+		this.fullName = fullName;
+		this.mobileNumber = mobileNumber;
+		this.address = address;
+		this.email = email;
+		this.password = password;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public String getMobileNumber() {
+		return mobileNumber;
+	}
+
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", fullName=" + fullName + ", mobileNumber=" + mobileNumber + ", address=" + address
+				+ ", email=" + email + ", password=" + password + "]";
+	}
+    
+    
+    
+    
+}
